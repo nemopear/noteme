@@ -267,4 +267,12 @@ p {
 .logo h1 {
   margin: 0; }
 
+.logo {
+  float: left; }
+
+.header {
+  padding: 40px 0;
+  overflow: hidden;
+  background-color: #efefef; }
+
 /*# sourceMappingURL=style.css.map */
