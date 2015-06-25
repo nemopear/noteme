@@ -1,0 +1,45 @@
+@import "font";
+@import "base";
+@import "components";
+
+// Menu
+.main-menu {
+	float: right;
+	width: 720px;
+	> ul > li {
+		display: inline-block;
+		margin: 0 20px;
+		float: left;
+		text-align: center;
+		position: relative;
+		&:hover {
+			.submenu { display: block;}
+		}
+	}
+	> ul > li .no-link { cursor: default;}
+	> ul > li > a,.no-link { font-size: 24px;}
+	a {
+		&:hover {
+			text-decoration: underline;
+		}
+		&:active, &:focus { text-decoration: none;}
+	}
+	ul li.active a, ul li.active .no-link { 
+		@extend .th-sarabun-bold;
+		// text-decoration: underline;
+	}
+}
+
+// Footer
+.footer {
+	margin-top: 50px;
+	background-color: #000;
+	ul li {
+		display: inline-block;
+		margin-right: 65px;
+		height: 50px;
+	}
+	ul li.logo-last { margin: 0;}
+}
+
+.logo h1 { margin: 0;}
